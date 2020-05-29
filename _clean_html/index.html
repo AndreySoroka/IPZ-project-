@@ -37,7 +37,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
+  max-width: 400px;
   position: relative;
   margin: auto;
 }
@@ -46,7 +46,7 @@ img {vertical-align: middle;}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 90%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -60,7 +60,7 @@ img {vertical-align: middle;}
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 10px 0 0 10px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -71,7 +71,7 @@ img {vertical-align: middle;}
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -138,11 +138,41 @@ img {vertical-align: middle;}
    .fig {
     text-align: center; /* Выравнивание по центру */ 
    }
+   .registration {
+    text-align: center;
+    height: 35px;
+    font: 50px;
+
+     /* Выравнивание по центру */ 
+  }
+     .button {
+    text-align: center;
+    height: 35px;
+    font: 70px;
+    background:#DDA0DD;
+    text-decoration-color:red 
+
+     /* Выравнивание по центру */ 
+  }
+   .layer1 {
+    position: relative; /* Относительное позиционирование */
+    background: #f0f0f0; /* Цвет фона */
+    height: 200px; /* Высота блока */
+   }
+   .layer2 {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 15px; /* Положение от нижнего края */
+    right: 15px; /* Положение от правого края */
+    line-height: 1px;
+   }
+  
   </style>
 
 </head>
 
 <body>
+
+
     <h1 align="center"> PYINT - графічний редактор для кожного! </h1><hr>
     <p align="center">Пориньте у ностальгічну атмосферу графічних редакторів pазом з PYINT.py</p> 
     
@@ -222,13 +252,7 @@ function showSlides(n) {
 	
 	<script src="js/common.js"></script>
 	<p align="center">За допомогою нашого графічного редактору ви зможете створютати не просто малюнки, <br> а піксельні ШЕДЕВРИ!</p> 
-	<p align="center">Заповніть регестраційну форму</p> 
-	<form action="#">
-		<p class="fig"><input type="text" name="name" placeholder="Ім'я" required align="center"><br></p>
-		<p class="fig"><input type="email" name="email" placeholder="E-mail" required align="center" ><br></p>
-        <p class="fig"> <input type="tel" name="phone" placeholder="Телефон" required align="center"><br></p>
-        <p class="fig"> <button type="submit" align="center">Зараєструватися</button></p>
-	</form>
+
 
 
 
@@ -237,21 +261,33 @@ function showSlides(n) {
 
     <h2 align="center">Нижче ви можете побачити скріншоти з інтерфейсом нашого додатку</h2> 
     <p align="center">Головний екран</p>
+
     <p class="fig"><img src="img/1.png" 
-   width="600" height="500" alt="Фотография"></p> <br>
+   width="500" height="400" alt="Фотография" ></p>
     <p align="center">Інструменти</p>
     <p class="fig"><img src="img/2.png" 
-   width="300" height="400" alt="Фотография"></p> <br> 
-    <p align="center">Палітра №1</p>
-    <p class="fig"><img src="img/3.png" 
-   width="300" height="400" alt="Фотография"></p> <br> 
-    <p align="center">Палітра №2</p>
-   <p class="fig"><img src="img/4.png" 
-   width="300" height="400" alt="Фотография"></p> 
+   width="100" height="100" alt="Фотография">
+    <img src="img/3.png" 
+   width="100" height="200" alt="Фотография"> 
+    <img src="img/4.png" 
+   width="100" height="200" alt="Фотография" >
+    <img src="img/5.png" 
+   width="100" height="150" alt="Фотография" ></p> 
 
 
 
   <p class="fig"><a align="center" href="https://github.com/AndreySoroka/IPZ-project-/blob/master/README.md">Настисніть сюди, щоб дізнатися більше</a></p> 
   <h2 class="fig"><a align="center" href="https://github.com/AndreySoroka/IPZ-project-/blob/master/pyint.exe">Завантажити PYINT</a></h2> 
-	
-	
+
+
+  <p align="center">Заповніть регестраційну форму</p> 
+  <form action="#">
+        <p class="registration"><input type="text" name="name" placeholder="Ім'я"  class="registration" style="width:15%"><br></p>
+        <p class="registration"><input type="email" name="email" placeholder="E-mail" class="registration" style="width:15%" ><br></p>
+        <p class="registration"> <input type="tel" name="phone" placeholder="Телефон"  class="registration" style="width:15%"><br></p>
+        <p class="registration"> <button type="submit" align="center" class="button" >ЗАРЕЄСТРУВАТИСЯ </button></p>
+  </form>
+
+
+</body>
+</html>
